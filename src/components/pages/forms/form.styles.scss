@@ -1,0 +1,37 @@
+form {
+  border: 1px solid black;
+  width: 360px;
+  height: 200px;
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 80px;
+  padding-top: 60px;
+  position: relative;
+  & .topText {
+    font-size: large;
+    position: absolute;
+    left: 80px;
+    top: 15px;
+    font-weight: bold;
+  }
+}
+.btns {
+  margin: 16px 48px 0px;
+  display: flex;
+  justify-content: space-between;
+  & button {
+    font-size: 10px;
+    color: white;
+    background-color: black;
+    border: 0;
+    border-radius: 1px;
+    padding: 12px;
+  }
+}
+
+.inputText {
+  border: 0;
+}
+.inputText:focus {
+  outline: none;
+}

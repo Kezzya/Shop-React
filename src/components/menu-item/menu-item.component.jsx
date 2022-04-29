@@ -4,19 +4,16 @@ import "./menu-item.styles.scss";
 
 export const MenuItem = ({ title, imageUrl, price }) => {
   return (
-    <div className="menu-item">
+    <Link to={`/shop/${title}`} className="menu-item">
       <div
-        className="background-image"
+        id="background-image"
         style={{ backgroundImage: `url(${imageUrl})` }}
       />
       <div className="content">
-        <Link to={`/shop/${title}`}>
-          <h1 className="title">{title.toUpperCase()}</h1>
-        </Link>
+        <h1 className="title">{title.toUpperCase()}</h1>
         <span className="subtitle">SHOP NOW </span>
         <span>{price}</span>
       </div>
-      <div> {price}</div>
-    </div>
+    </Link>
   );
 };

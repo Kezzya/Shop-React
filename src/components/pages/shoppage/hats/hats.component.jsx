@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { MenuItem } from "../menu-item/menu-item.component";
+import { MenuItem } from "../../../menu-item/menu-item.component";
 import "./hats.styles.scss";
 
 export const Hats = (props) => {
   const [hats, setHats] = useState(hatsList);
   return (
     <div>
-      <div>hats</div>
       <div className="menu">
         {hats.map((e) => (
           <MenuItem
